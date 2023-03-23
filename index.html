@@ -57,12 +57,23 @@
             margin-right: 500px;
             display: flex;
         }
+        .signup1 {
+            margin-left: 25px;
+            min-height: 25px;
+            min-width: 25px;
+        }
         .placeholder {
-            background-color: grey;
+            background-color: gray !important;
+            height: 300px;
             width: 300px;
-            border: 15px solid green;
-            padding: 50px;
+            padding: 20px;
             margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            text-align: center;
+            float: right;
+
         }
         #img-holder {
             color: #E5E7EB;
@@ -71,19 +82,56 @@
             display: flex;
         }
 
-
-
-
-
-
-
-        
+        .randominfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ;
+    }
+        .bluebox {
+            border: 2px solid blue;
+            height: 75px;
+            width: 75px;
+            flex: 0 0 200px;
+            padding: 10px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+        .bluebox:first-child:nth-child(-n+2) {
+            margin-left: 0;
+        }
+        .bluebox:last-child:nth-child(-n+4) {
+            margin-right: 0;
+        }
+        .quote {
+            background-color: #E5E7EB;
+            font-size: 36px;
+            color: #1F2937;
+        }
+        .action {
+            background-color: #3882f6;
+        }
+        .action-main {
+            color: #F9FAF8;
+            font-size: 28px;
+        }
+        .action-secondary {
+            color: #E5E7EB;
+            font-size: 18px;
+        }
+        .signup2 {
+            margin-left: 25px;
+            min-height: 25px;
+            min-width: 25px;
+        }
         footer {
         background-color: #1F2937;
-        color: #F9FAF8;
         padding: 10px;
         text-align: center;
-      }
+        }
     </style>
 </head>
 <body>
@@ -96,39 +144,41 @@
         </ul>
     </h1>
     <section class="Main">
-        <div>
+        <aside class="aside">
             <p id="Hero-main">This website is awesome</p>
             <p id="Hero-secondary">This website has some subtext that goes here under the main title. It's smaller font and the color is lower contrast.</p>
+            <input type="button" class="signup1" />
+        </aside>
+        <div>
             <figure class="Placeholder">
                 <p id="img-holder">this is a placeholder for an image</p>
             </figure>
         </div>
     </section>
-    <section>
-        <div>
-            <p>Some random information.</p>
-        </div>
+    <section class="randominfo">
+            <h2>Some random information.</h2>
         <ul>
-            <li>image 1</li>
-                <p>this is some subtext under an illustration or image</p>
-            <li>image 2</li>
-                <p>this is some subtext under an illustration or image</p>
-            <li>image 3</li>
-                <p>this is some subtext under an illustration or image</p>
-            <li>image 4</li>
-                <p>this is some subtext under an illustration or image</p>
+            <li class="bluebox"></li>
+                <div class="subtxt">this is some subtext under an illustration or image</div>
+            <li class="bluebox"></li>
+                <div class="subtxt">this is some subtext under an illustration or image</div>
+            <li class="bluebox"></li>
+                <div class="subtxt">this is some subtext under an illustration or image</div>
+            <li class="bluebox"></li>
+                <div class="subtxt">this is some subtext under an illustration or image</div>
         </ul>
     </section>
-    <section>
+    <section class="quote">
         <div>
-            <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.</p>
-            <p>-Thor, God of Thunder</p>
+            <p><em>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.</em></p>
+            <p><b>-Thor, God of Thunder<b></p>
         </div>
     </section>
     <section>
-        <div>
-            <p>Call to action! It's time!</p>
-            <p>Sign up for our product by clicking the button right over there!</p>
+        <div class="action">
+            <p class="action-main">Call to action! It's time!</p>
+            <p class="action-secondary">Sign up for our product by clicking the button right over there!</p>
+            <input type="button" class="signup2" />
         </div>
     </section>
     <footer>
